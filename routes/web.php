@@ -32,11 +32,11 @@ Route::get('/', function () {
   $data =
       [
         
-        'utenti' => [ 
+      'utenti' => [   
         [
           'name' => 'alessandro',
           'surname' => 'ciancio',
-          'email' => 'alessandro.ciancio@libero.it',
+          'email' => 'alessandro.cianciolibero.it',
           'work' => 'student',
         ],
         [

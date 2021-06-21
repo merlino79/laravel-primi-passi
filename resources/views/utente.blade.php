@@ -11,32 +11,29 @@
 
     
 
-     @if(!strpos($_email, "@") || !strpos($_email, ".")){
-       <p>non puoi accedere</p>
-     @else
-      <p>puoi entrare</p>  
-     }
+     
+
+   
+       
+     
     utente:
 
 
     <ul>
-          @foreach ($utenti as $utente)
+          @foreach ($utenti as $utente)  
 
-        <li>
+            @if(!strpos($utente['email'], "@") || !strpos($utente['email'], "."))
+            <p>non puoi accedere</p>
+            @else
+               <p>puoi entrare</p>  
+            @endif
 
-          {{$utente['name']}} 
+             <li>
+              {{$utente['email']}}
+            </li>
+          @endforeach
+
          
-        </li>  
-        <li>
-           {{$utente['email']}} 
-        </li>
-        
-        
-      
-         
-         
-       
-         @endforeach
      </ul>        
     
           
