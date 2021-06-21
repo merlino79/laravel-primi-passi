@@ -11,20 +11,31 @@
 </head>
 <body>
   <header>
-    
 
-     <h1 class="text-center my-2">
-         {{$title}}
-     </h1>
-     <ul>
-       <li>
-         <a href="http://127.0.0.1:8000/utente">utente</a>
-       </li>
-     </ul>
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+           <div class="link">
+                <ul class="d-flex">
+                <li class="me-sm-5">
+                  <a href="http://127.0.0.1:8000/utente">utente</a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:8000/utente">film</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </header>
 
   <main>
+    <h1 class="text-center my-2">
+         {{$title}}
+     </h1>
 
     
     
