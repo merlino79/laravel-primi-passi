@@ -17,45 +17,62 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
   $data = 
-  [
-    'title' => 'hello word',
-  ];
-  return view('home', $data);
+      [
+        'title' => 'hello word',
+      ];
+      return view('home', $data);
   
     
     
 
 });
 
-   Route::get('/utente', function () {
+  
+   
+Route::get('/utente', function () {
 
-  $data =
+      $data =
       [
         
-      'utenti' => [   
-        [
-          'name' => 'alessandro',
-          'surname' => 'ciancio',
-          'email' => 'alessandro.cianciolibero.it',
-          'work' => 'student',
-        ],
-        [
-          'name' => 'ugo',
-          'surname' => 'bianchi',
-          'email' => 'bianchi@libero.it',
-          'work' => 'student',
-        ],
-        [
-          'name' => 'maria',
-          'surname' => 'verdi',
-          'email' => 'verdi@gmail.com',
-          'work' => 'student',
-        ],
-      ] 
-      ];
-    
+        'utenti' => [   
+          [
+            'name' => 'alessandro',
+            'surname' => 'ciancio',
+            'email' => 'alessandro.cianciolibero.it',
+            'work' => 'student',
+          ],
+          [
+            'name' => 'ugo',
+            'surname' => 'bianchi',
+            'email' => 'bianchi@libero.it',
+            'work' => 'student',
+          ],
+          [
+            'name' => 'maria',
+            'surname' => 'verdi',
+            'email' => 'verdi@gmail.com',
+            'work' => 'student',
+          ],
+        ] 
+        ];
+      
 
  
-    return view('utente', $data);
-    
-   });    
+      return view('utente', $data);
+
+  
+});
+
+Route::get('/film', function () {
+
+  $data =
+    [
+      'title' => 'film',
+    ];
+  return view('film', $data);
+});
+
+   
+
+  
+  
