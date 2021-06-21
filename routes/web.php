@@ -28,7 +28,7 @@ Route::get('/', function () {
 });
 
    Route::get('/utente', function () {
-     
+
   $data =
       [
         
@@ -36,15 +36,23 @@ Route::get('/', function () {
         [
           'name' => 'alessandro',
           'surname' => 'ciancio',
-          'work' => 'students',
+          'email' => 'alessandro.ciancio@libero.it',
+          'work' => 'student',
         ],
         [
-          'name' => 'andres',
-          'surname' => 'acosta',
-          'work' => 'students',
+          'name' => 'ugo',
+          'surname' => 'bianchi',
+          'email' => 'bianchi@libero.it',
+          'work' => 'student',
+        ],
+        [
+          'name' => 'maria',
+          'surname' => 'verdi',
+          'email' => 'verdi@gmail.com',
+          'work' => 'student',
         ],
       ] 
-    ];
+      ];
     
 
  
