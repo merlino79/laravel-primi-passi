@@ -38,13 +38,13 @@ Route::get('/utente', function () {
           [
             'name' => 'alessandro',
             'surname' => 'ciancio',
-            'email' => 'alessandro.cianciolibero.it',
+            'email' => 'alessandro.ciancio@libero.it',
             'work' => 'student',
           ],
           [
             'name' => 'ugo',
             'surname' => 'bianchi',
-            'email' => 'bianchi@libero.it',
+            'email' => 'bianchilibero.it',
             'work' => 'student',
           ],
           [
@@ -68,6 +68,25 @@ Route::get('/film', function () {
   $data =
     [
       'title' => 'film',
+
+      'film' =>[
+        'film1' => [
+          'title' => 'SPIRAL - L\'EREDITÀ DI SAW',
+          'direct' => 'Darren Lynn Bousman',
+          'year' => '2021',
+        ],
+        'film2' => [
+
+          'title' => 'FAST & FURIOUS 9',
+          'direct' => 'Darren Lynn Bousman',
+          'year' => '2021',
+        ],
+
+
+
+
+      ],
+
     ];
   return view('film', $data);
 });

@@ -20,25 +20,29 @@
     <div class="container my-2">
       <div class="row">
         <div class="col">
-          utente:
+          <h3>utenti</h3>
+        <ul>
 
-
-    <ul>
           @foreach ($utenti as $utente)  
 
             @if(!strpos($utente['email'], "@") || !strpos($utente['email'], "."))
-            <p>non puoi accedere</p>
-            @else
-               <p>puoi entrare</p>  
-            @endif
+             
+        
+              <p>non puoi accedere</p>
+                
+               @else
 
              <li>
               {{$utente['email']}}
+             
             </li>
+              <p>puoi entrare</p> 
+          @endif
+            
           @endforeach
 
-         
-     </ul>        
+            
+        </ul>        
         </div>
       </div>
     </div>
@@ -47,26 +51,5 @@
   
   
 
-    
-
-     
-
-   
-       
-     
-    
-          
-         
-       
-
-   
-
-
-
-
-
-        
-    
-  
 </body>
 </html>

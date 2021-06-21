@@ -31,9 +31,31 @@
        </div>
      </div>
      <div class="row">
-       ale
-     </div>
-   </div>
+       <div class="col mt-4">
+         
+          <ul>
+            @foreach ($film as $films)
+              
+
+                <li>
+                  <h4>{{$films['title']}}</h1>
+                  
+                </li>
+                <li>
+                  diretto :
+                  {{$films['direct']}}
+                </li>
+                <li>
+                  year :
+                  {{$films['year']}}
+                </li>
+
+              
+            @endforeach
+         </ul>
+       </div>
+       
+
  </main>
 </body>
 </html>
