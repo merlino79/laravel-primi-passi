@@ -10,8 +10,28 @@
   <title>laravel_welcome</title>
 </head>
 <body>
-  <h1 class="text-center my-2">
-    {{$title}}
-  </h1>
+  <header>
+
+     <h1 class="text-center my-2">
+         {{$title}}
+     </h1>
+     <ul>
+       <li>
+         <a href="http://127.0.0.1:8000/utente">utente</a>
+       </li>
+     </ul>
+
+  </header>
+
+  <main>
+
+    
+    
+
+   
+
+  </main>
+  
+
 </body>
 </html>

@@ -16,17 +16,34 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
+  $data = 
+  [
+    'title' => 'hello word',
+  ];
+  return view('home', $data);
+    
+    
 
-    $data = 
-    [
-      'title'=> 'hello word',
-    ];
-
-
-    return view('home', $data);
-    return view('home', $data);
 });
 
-   Route::get('/abaut', function () {
-    return view('abaut');
+   Route::get('/utente', function () {
+  $data =
+  [
+    
+    'utenti' =>
+    [
+      'name' => 'alessandro',
+      'surname' => 'ciancio',
+      'work' => 'students',
+    ],
+    
+    [
+      'name' => 'andres',
+      'surname' => 'acosta',
+      'work' => 'students',
+    ],
+
+  ];
+    return view('utente', $data);
+    
    });    
