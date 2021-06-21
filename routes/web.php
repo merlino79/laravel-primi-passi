@@ -21,6 +21,7 @@ Route::get('/', function () {
     'title' => 'hello word',
   ];
   return view('home', $data);
+  
     
     
 
