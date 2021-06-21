@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+
+
+    $data = 
+    [
+      'title'=> 'hello word',
+    ];
+
+
+    return view('home', $data);
+    return view('home', $data);
 });
+
+   Route::get('/abaut', function () {
+    return view('abaut');
+   });    
