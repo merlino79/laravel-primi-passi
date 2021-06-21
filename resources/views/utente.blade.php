@@ -13,11 +13,14 @@
 
     <ul>
         @foreach ($utenti as $utente)
+          @foreach ( as )
+            
+          @endforeach
           
             
        
         <li>
-          {{$utente}} 
+          {{$utente['name']}} 
         </li>
           
          

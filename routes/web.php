@@ -28,23 +28,26 @@ Route::get('/', function () {
 });
 
    Route::get('/utente', function () {
+     
   $data =
-  [
+      [
+        
+        'utenti' => [ 
+        [
+          'name' => 'alessandro',
+          'surname' => 'ciancio',
+          'work' => 'students',
+        ],
+        [
+          'name' => 'andres',
+          'surname' => 'acosta',
+          'work' => 'students',
+        ],
+      ] 
+    ];
     
-    'utenti' =>
-    [
-      'name' => 'alessandro',
-      'surname' => 'ciancio',
-      'work' => 'students',
-    ],
-    
-    [
-      'name' => 'andres',
-      'surname' => 'acosta',
-      'work' => 'students',
-    ],
 
-  ];
+ 
     return view('utente', $data);
     
    });    
